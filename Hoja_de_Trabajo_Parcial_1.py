@@ -1,0 +1,109 @@
+print()
+print()#Solo se usan para dejar lineas de espacio
+
+#Ejercicio 1
+print('Hola' + str("'") + str('"') +
+      ' a todas"' + str("'") +
+      ' y "' + str("'") + ' todos!""')
+print('-'*30)
+print(' '*30)
+#Output = Hola'" a todas"' y "' todos!""
+
+#Ejercicio 2
+user = input("Ingrese su nombre de usuario: ")
+print("Hola " + '{:^11}'.format(user) + " bienvenido!")
+print('-'*25)
+print(' '*25)
+
+#Ejercicio 4 Tabla de verdad
+print(user, ", esta es una tabla de verdad")
+print("A   B   Q")
+print(int(False),' ', int(False),' ', int(False))
+print(int(False),' ', int(True),' ', int(True))
+print(int(True),' ', int(False),' ', int(True))
+print(int(True),' ', int(True),' ', int(True))
+print('-'*37)
+print(' '*37)
+
+#Ejercicio 5
+print(user + ", ¿cual es la cantidad promedio de horas que ha estudiado diariamente para el curso de Programacion III?")
+horas = int(input('Horas estudiadas: '))
+dias = 30
+total_horas = horas * dias
+print('El total de horas estudiadas por mes es: ', int(total_horas))
+print(type(total_horas))
+print('-'*37)
+print(' '*37)
+
+#Ejercicio 6
+print('{:^11}'.format(user))
+n = int(input("Ingrese un numero: "))
+n_2 = n
+n += 1
+n = n_2 * n
+n /= 2
+print("El total de la suma de los enteros del numero es:", + int(n))
+print('-'*37)
+print(' '*37)
+
+#Ejercicio 7
+print(user, ", calcularemos su Indice de Masa Corporal (IMC)")
+altura = float(input("Ingrese su altura en metros: "))
+peso = float(input("Ingrese su peso en Kg: "))
+imc = altura**2
+imc = peso / imc
+#Metodo Round para redondear decimales  round(x,n)
+print("Su Indice de Masa Corporal es de: ", round(imc, 2), 'Kg/m2 IMC')
+print('-'*37)
+print(' '*37)
+
+#Ejercicio 8
+print(user + ", ingrese dos numeros con decimal: ")
+a = float(input("Numero 1: "))
+a1= a
+b = float(input("Numero 2: "))
+b1 = b
+c = a//b
+d = a1%b1
+print("El conciente resultante de Numero1/Numero2: ", int(c))
+print('El sobrante de la division de Numero1/Numero2: ', int(d))
+print('-'*37)
+print(' '*37)
+
+#Ejercicio 9
+print(user, ", calcularemos su inversion.")
+monto = float(input("Ingrese su monto a invertir: "))
+interes = float(input("Ingrese el porcentaje %(eje.10) de interes anual: "'% '))
+anos = int(input('Ingrese la cantidad de años de inversion: '))
+interes /= 100
+interes_total = interes * anos
+capital_ganacia = monto * interes_total
+print('La ganancia obtenida es: ', round(capital_ganacia, 2))
+print('El capital total obtenido en ', anos,' años es de : ', round(capital_ganacia + monto, 2))
+print('-'*37)
+print(' '*37)
+
+#Ejercicio 10
+print(user, ', ¿cuantas sierras y barrenos se vendieron?')
+sierras = int(input("Sierras: "))
+barrenos = int(input("Barrenos: "))
+sierras *= 75
+barrenos *= 112
+peso_total = sierras + barrenos
+print("El peso total del ultimo pedido es de: ", peso_total, 'Kg')
+print('-'*37)
+print(' '*37)
+
+#Ejercicio 11
+print(user, '¿cuantas memorias Ram usadas se han vendido?')
+ram_used = int(input("Ram's usadas: "))
+print("El precio habitual de una memoria Ram nueva es de $20.00")
+print("Las Ram usadas tienen 60% de descuento.")
+ram_current = ram_used*20
+print("En ese caso, "
+      "precio normal (nuevas) de estas memorias usadas Ram seria: $",ram_current)
+ram_percent = ram_current*0.6
+ram_used_total = ram_current - ram_percent
+print("El precio total de las Ram usadas, con el descuento es de: $",ram_used_total)
+print('-'*37)
+print(' '*37)
