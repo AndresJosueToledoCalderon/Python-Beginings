@@ -15,6 +15,16 @@ print("Hola " + '{:^11}'.format(user) + " bienvenido!")
 print('-'*25)
 print(' '*25)
 
+#Ejercicio 4 Tabla de verdad
+print(user, ", esta es una tabla de verdad")
+print("A   B   Q")
+print(int(False),' ', int(False),' ', int(False))
+print(int(False),' ', int(True),' ', int(True))
+print(int(True),' ', int(False),' ', int(True))
+print(int(True),' ', int(True),' ', int(True))
+print('-'*37)
+print(' '*37)
+
 #Ejercicio 5 Calcular horas de estudio
 print(user + ", ¿cual es la cantidad promedio de horas que ha estudiado diariamente para el curso de Programacion III?")
 horas = int(input('Horas estudiadas: '))
